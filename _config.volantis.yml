@@ -421,15 +421,15 @@ sidebar:
         title: 文档导航 v5.0
 
 site_footer:
-  layout: [aplayer, social, copyright, content, analytics]
+  layout: [aplayer, social, copyright, beian, content, analytics]
   social:
     - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
       url: https://github.com/Please-to-study
     - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1.3/icon/1322024-social-media/045-telegram.svg
       url: mailto:1101131319@qq.com
   copyright: 'Copyright © 2020-2021 By White'
+  beian: ''
   content: 本站使用[Volantis](https://github.com/volantis-x/hexo-theme-volantis/tree/4.3.1)作为主题|借助[hexo](https://hexo.io/zh-cn/index.html)强力驱动|由[腾讯云](https://cloud.tencent.com/)提供云服务
-
 
 tag_plugins:
   # {% note text %}
