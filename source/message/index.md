@@ -19,7 +19,7 @@ sitemap: false
 
 {% folding cyan, 请遵守相关法律法规，文明灌水，谢谢合作~ %}
 {% gallery::stretch %}
-![](http://cdn.pkubailu.cn/img/messageBackground.jpg)
+![](https://cdn.pkubailu.cn/img/messageBackground.jpg)
 {% endgallery %}
 {% endfolding %}
 

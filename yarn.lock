@@ -89,7 +89,7 @@
   "resolved" "https://npm.corp.kuaishou.com/binary-extensions/-/binary-extensions-2.2.0.tgz"
   "version" "2.2.0"
 
-"bluebird@^3.2.2", "bluebird@^3.5.1", "bluebird@^3.5.2", "bluebird@^3.5.5":
+"bluebird@^3.2.2", "bluebird@^3.5.0", "bluebird@^3.5.1", "bluebird@^3.5.2", "bluebird@^3.5.5":
   "integrity" "sha1-nyKcFb4nJFT/qXOs4NvueaGww28="
   "resolved" "https://npm.corp.kuaishou.com/bluebird/-/bluebird-3.7.2.tgz"
   "version" "3.7.2"
@@ -432,6 +432,11 @@
   dependencies:
     "function-bind" "^1.1.1"
 
+"hexo-blog-encrypt@^3.1.6":
+  "integrity" "sha1-lT2xssj0FaciTbI6AsrnoGOmX+I="
+  "resolved" "https://npm.corp.kuaishou.com/hexo-blog-encrypt/-/hexo-blog-encrypt-3.1.6.tgz"
+  "version" "3.1.6"
+
 "hexo-cli@^4.0.0":
   "integrity" "sha1-S7K/EaMPrmAfL1OsDLgz/uMYdkk="
   "resolved" "https://npm.corp.kuaishou.com/hexo-cli/-/hexo-cli-4.3.0.tgz"
@@ -447,6 +452,23 @@
     "minimist" "^1.2.5"
     "resolve" "^1.11.0"
     "tildify" "^2.0.0"
+
+"hexo-deployer-git@^3.0.0":
+  "integrity" "sha1-2oL3o0Rd8rITkm3I0DC6VJm2jPM="
+  "resolved" "https://npm.corp.kuaishou.com/hexo-deployer-git/-/hexo-deployer-git-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "bluebird" "^3.5.0"
+    "chalk" "^4.0.0"
+    "hexo-fs" "^3.0.1"
+    "hexo-util" "^2.1.0"
+    "moment" "^2.18.0"
+    "nunjucks" "^3.2.1"
+
+"hexo-electric-clock@^1.1.0":
+  "integrity" "sha1-Y67eFSO71NBpqn6OcTIpH7OZxcQ="
+  "resolved" "https://npm.corp.kuaishou.com/hexo-electric-clock/-/hexo-electric-clock-1.1.0.tgz"
+  "version" "1.1.0"
 
 "hexo-front-matter@^2.0.0":
   "integrity" "sha1-A/Oanu2xbFRI27O+x9/yxOIkAGw="
@@ -819,7 +841,7 @@
   dependencies:
     "moment" ">= 2.9.0"
 
-"moment@^2.22.2", "moment@>= 2.9.0", "moment@latest":
+"moment@^2.18.0", "moment@^2.22.2", "moment@>= 2.9.0", "moment@latest":
   "integrity" "sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M="
   "resolved" "https://npm.corp.kuaishou.com/moment/-/moment-2.29.1.tgz"
   "version" "2.29.1"

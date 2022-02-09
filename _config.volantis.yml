@@ -91,7 +91,7 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter]
+    top_meta: [author, category, date, counter, valinecount, wordcount]
     # ----------------
     # 文章页脚组件
     footer_widget:
@@ -219,7 +219,7 @@ comments:
     issue-number: 115
 
 sidebar:
-  for_page: [blogger, guide, category, webinfo, tagcloud, toc]
+  for_page: [blogger, post, guide, category, webinfo, tagcloud, toc]
   for_post: [toc]
   widget_library:
    # ---------------------------------------
@@ -227,7 +227,7 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: http://cdn.pkubailu.cn/img/logo.png
+      avatar: https://cdn.pkubailu.cn/img/logo.png
       shape: rectangle # circle, rectangle
       url: /about/
       title:  I am Baymax
@@ -263,19 +263,17 @@ sidebar:
       header:
         icon: fas fa-list
         title: 本文目录
-      list_number: true
+      list_number: false
       min_depth: 2
       max_depth: 5
     post:
       class: text
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-plus
-        title: 社区活动
-        url: /contributors/
-      content:
-        - '**如何让自己的文章收录到这里？**<br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「[**发布与分享文章**](/contributors/#发布与分享文章)」。'
-    # 文档导航
+        icon: fas fa-bells
+        title: 今日天气
+      content: ["天气渐冷，注意保暖😯"]
+        # 文档导航
     guide:
       class: grid
       display: [desktop, mobile] # [desktop, mobile]
@@ -447,7 +445,30 @@ plugins:
     duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - http://cdn.pkubailu.cn/img/cover.jpg
+      - https://cdn.pkubailu.cn/img/cover.jpg
+   # 代码高亮
+  code_highlight: highlightjs # highlightjs or prismjs
+  # highlight.js
+  highlightjs:
+    copy_code: true
+    # 如果开启 js, hexo.config.highlight.enable 需要设置为 false
+    js: #https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js # Please set hexo.config.highlight.enable = false !!!
+    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css
+    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
+
+  # prismjs
+  # https://prismjs.com/
+  # https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS
+  prismjs:
+    copy_code: true
+    # Please set hexo.config.highlight.enable = false !!! set hexo.config.prismjs.enable = true !!!
+    js:
+      - https://cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+    css:
+      - https://cdn.jsdelivr.net/npm/prismjs/themes/prism-dark.css
+      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
   aplayer:
     enable: true
     autoplay: false

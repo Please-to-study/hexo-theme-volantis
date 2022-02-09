@@ -1915,6 +1915,10 @@ img.lazyload:not(.placeholder):not(.loaded) {
 img.lazyload:not(.placeholder).loaded {
   filter: none;
 }
+.card-background {
+  height: auto !important;
+  margin: 0px !important;
+}
 .md >p {
   padding-top: 4px;
 }
@@ -7663,6 +7667,9 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
 }
 .fa-book-reader {
   color: #48dbfb;
+}
+.fa-bells {
+  color: #ffd700;
 }
 #safearea {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;

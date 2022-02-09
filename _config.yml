@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://www.pkubailu.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -44,7 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -99,7 +99,31 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: volantis
 
+# 电子钟
+electric_clock:
+  priority: 10
+  enable: true
+  enable_page: all
+  layout:
+    type: id
+    name: clock
+    index: 0
+  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
+
+# Security
+encrypt: # hexo-blog-encrypt
+  silent: true
+  abstract: ''
+  message: 丫头，你猜密码是什么！
+  tags:
+  - {name: private, password: bs201314}
+  wrong_pass_message: 抱歉，您输入的密码错误，请检查后重新输入。
+  wrong_hash_message: 抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  #repo改为repo: git@你的域名:/var/repo/hexo.git
+  repo: root@81.70.244.192:/var/repo/hexo.git  # 81.70.244.192
+  branch: master
